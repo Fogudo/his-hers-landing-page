@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0 auto;
+  color: #f5f6f7;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5em;
+  width: 100%;
+  min-height: 100vh;
+}
+body::before {
+  width: 100%;
+  min-height: 100vh;
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-image: url("/img/headshot.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#main {
+  height: 100vh;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+
+  
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 4px 4px 10px black;
+  color: rgb(255, 255, 255);
+  width: 100%;
+  &:hover {
+    transform: scale: (1.5);
+    color: white;
+    font-weight: bold;
+  }
+}
+.footer > p {
+  margin: 0 auto;
+}
+.footer-link {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+h1 {
+  color: black;
+  text-align: center;
+  font-size: 4rem;
+  margin: 0;
+  font-weight: bolder;
+  text-shadow: 4px 4px 10px black;
+}
+
+.span {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  padding: 0;
+  text-shadow: 4px 4px 10px black;
+  text-align: center;
+
+}
+
+.height {
+  padding-top: 100px;
+}
+
+.btn-xl {
+  /* background-color: orangered;
+  border: none;
+  border-radius: 3em;
+  padding: 15px 32px;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-bottom: 30px; */
+}
+
+.btn-pri {
+  background-color: #ee4b08;
+  --bs-btn-hover-bg: #ee4b08;
+  background-color: orangered;
+  border: none;
+  border-radius: 3em;
+  padding: 15px 32px;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+  text-transform: uppercase;
+
+}
+
+.btn-pri:hover {
+  font-size: 1.1rem;
+  border-width: 0;
+}
+
+hr {
+  margin: 0 auto 20px auto;
+  color: #f05f44;
+  border: 2px solid #f05f44;
+  max-width: 65px;
+  opacity: 1;
+}
+.text-center {
+  width: 100%;
+}
+@media (max-width: 400px) {
+  h1 {
+    font-size: 3rem;
+  }
+  .span {
+    font-size: 3rem;
+  }
+  .footer {
+    font-size: 0.8rem;
+  }
+  .btn-pri {
+    font-size: 8px;
+  }
+}
